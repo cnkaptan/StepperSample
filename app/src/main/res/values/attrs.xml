@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StepProgressView">
+        <attr name="completedColor" format="color"/>
+        <attr name="circleRadius" format="dimension"/>
+        <attr name="lineHeight" format="dimension"/>
+        <attr name="componentTextAppearance" format="reference"/>
+        <attr name="stepTextsFont" format="reference"/>
+    </declare-styleable>
+</resources>

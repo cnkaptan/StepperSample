@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvStepHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cute_font_regular"
+        android:text="Cihan Kaptan"
+        android:textAppearance="@style/StepperSample.Body1"
+        android:textFontWeight="300"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.cnkaptan.steppersample.views.StepProgressView
+        android:id="@+id/stepProgressView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:stepTextsFont="@font/cute_font_regular"
+        app:circleRadius="@dimen/circle_size"
+        app:completedColor="@color/material_dynamic_neutral40"
+        app:layout_constraintTop_toBottomOf="@id/tvStepHeader" />
+</androidx.constraintlayout.widget.ConstraintLayout>
